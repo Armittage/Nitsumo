@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "365910391992",
+    "firebase_url": "https://nitsumo-629ba.firebaseio.com",
+    "project_id": "nitsumo-629ba",
+    "storage_bucket": "nitsumo-629ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:365910391992:android:ac0d7e9e64626db1",
+        "android_client_info": {
+          "package_name": "com.jatsu.nitsumo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "365910391992-983g3majjns0v2keu2tamo2ag24muhj8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jatsu.nitsumo",
+            "certificate_hash": "ee28aa1836244254894e7617aa94930912d7a5af"
+          }
+        },
+        {
+          "client_id": "365910391992-0m1mavh1l3cn8kg9hf5fuqpmo53623dh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAytVAiV_65sgYNO0sX2DLAAkpqCi2sw48"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "365910391992-0m1mavh1l3cn8kg9hf5fuqpmo53623dh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
