@@ -87,9 +87,6 @@ public class LogInFragment extends AuthFragment{
             @Override
             public void onClick(View v) {
                 login();
-//                Intent intent = new Intent(getContext(),MainActivity.class);
-//                startActivity(intent);
-//                getActivity().getSupportFragmentManager().popBackStack();
             }
         });
 
@@ -151,24 +148,6 @@ public class LogInFragment extends AuthFragment{
                 // TODO: Implement successful signup logic here
                 // By default we just finish the Activity and log them in automatically
 
-//                auth.createUserWithEmailAndPassword(_emailText.getText().toString(), _passwordText.getText().toString())
-//                        .addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
-//                            @Override
-//                            public void onComplete(@NonNull Task<AuthResult> task) {
-//                                Toast.makeText(LoginActivity.this, "createUserWithEmail:onComplete:" + task.isSuccessful(), Toast.LENGTH_SHORT).show();
-//                                //progressBar.setVisibility(View.GONE);
-//                                // If sign in fails, display a message to the user. If sign in succeeds
-//                                // the auth state listener will be notified and logic to handle the
-//                                // signed in user can be handled in the listener.
-//                                if (!task.isSuccessful()) {
-//                                    Toast.makeText(LoginActivity.this, "Authentication failed." + task.getException(),
-//                                            Toast.LENGTH_SHORT).show();
-//                                } else {
-//                                    //startActivity(new Intent(SignupActivity.this, LoginActivity.class));
-//                                    finish();
-//                                }
-//                            }
-//                        });
                 getActivity().getSupportFragmentManager().popBackStack();
             }
         }
@@ -228,7 +207,6 @@ public class LogInFragment extends AuthFragment{
 
     public void onLoginSuccess() {
         _loginButton.setEnabled(true);
-        //getActivity().getSupportFragmentManager().popBackStack();
     }
 
     public void onLoginFailed() {

@@ -91,9 +91,6 @@ public class SignUpFragment extends AuthFragment{
             @Override
             public void onClick(View v) {
                 signup();
-//                Intent intent = new Intent(getContext(),MainActivity.class);
-//                startActivity(intent);
-//                getActivity().getSupportFragmentManager().popBackStack();
             }
         });
 
@@ -175,11 +172,6 @@ public class SignUpFragment extends AuthFragment{
 
         // TODO: Implement your own signup logic here.
 
-//        Intent intent = new Intent(getContext(), MainActivity.class);
-//        startActivityForResult(intent, REQUEST_SIGNUP);
-//        //getActivity().getSupportFragmentManager().popBackStack();
-//        getActivity().finish();
-
         auth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(getActivity(), new OnCompleteListener<AuthResult>() {
                     @Override
@@ -214,35 +206,9 @@ public class SignUpFragment extends AuthFragment{
 
     }
 
-
-//    private void LoginUser(String email, final String password) {
-//        auth.createUserWithEmailAndPassword(email, password)
-//                .addOnCompleteListener(getActivity(), new OnCompleteListener<AuthResult>() {
-//                    @Override
-//                    public void onComplete(@NonNull Task<AuthResult> task) {
-//                        Toast.makeText(getContext(), "createUserWithEmail:onComplete:" + task.isSuccessful(), Toast.LENGTH_SHORT).show();
-//                        //progressBar.setVisibility(View.GONE);
-//                        // If sign in fails, display a message to the user. If sign in succeeds
-//                        // the auth state listener will be notified and logic to handle the
-//                        // signed in user can be handled in the listener.
-//                        if (!task.isSuccessful()) {
-//                            Toast.makeText(getContext(), "Authentication failed." + task.getException(),
-//                                    Toast.LENGTH_SHORT).show();
-//                        } else {
-//                            //startActivity(new Intent(SignupActivity.this, LoginActivity.class));
-//                            Intent intent = new Intent(getContext(),MainActivity.class);
-//                            startActivity(intent);
-//                            getActivity().getSupportFragmentManager().popBackStack();
-//                        }
-//                    }
-//                });
-//    }
-
     public void onSignupSuccess() {
         _signupButton.setEnabled(true);
         getActivity().setResult(RESULT_OK, null);
-//        getActivity().getSupportFragmentManager().popBackStack();
-//        getActivity().finish();
     }
 
     public void onSignupFailed() {
